@@ -11,7 +11,7 @@ package pkcs11
 // * CK_ULONG never overflows an Go int
 
 /*
-#cgo windows CFLAGS: -DPACKED_STRUCTURES
+#cgo windows CFLAGS: -DREPACK_STRUCTURES
 #cgo windows LDFLAGS: -lltdl
 #cgo linux LDFLAGS: -lltdl -ldl
 #cgo darwin CFLAGS: -I/usr/local/share/libtool
