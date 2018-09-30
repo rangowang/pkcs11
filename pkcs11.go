@@ -12,7 +12,7 @@ package pkcs11
 
 /*
 #cgo windows CFLAGS: -DREPACK_STRUCTURES
-#cgo windows LDFLAGS: -lltdl
+#cgo windows LDFLAGS: -lltdl -LC:/cygwin64/usr/local/lib
 #cgo linux LDFLAGS: -lltdl -ldl
 #cgo darwin CFLAGS: -I/usr/local/share/libtool
 #cgo darwin LDFLAGS: -lltdl -L/usr/local/lib/
