@@ -126,24 +126,25 @@ type SlotInfo struct {
 
 // TokenInfo provides information about a token.
 type TokenInfo struct {
-	Label              string
-	ManufacturerID     string
-	Model              string
-	SerialNumber       string
-	Flags              uint
-	MaxSessionCount    uint
-	SessionCount       uint
-	MaxRwSessionCount  uint
-	RwSessionCount     uint
-	MaxPinLen          uint
-	MinPinLen          uint
-	TotalPublicMemory  uint
-	FreePublicMemory   uint
-	TotalPrivateMemory uint
-	FreePrivateMemory  uint
-	HardwareVersion    Version
-	FirmwareVersion    Version
-	UTCTime            string
+	Label              string  `json:"label"`
+	ManufacturerID     string  `json:"manufacturerID"`
+	Model              string  `json:"model"`
+	SerialNumber       string  `json:"serialNum"`
+	Flags              uint    `json:"flag,string"`
+	MaxSessionCount    uint    `json:"maxSessionCount,string"`
+	SessionCount       uint    `json:"sessionCount,string"`
+	MaxRwSessionCount  uint    `json:"maxRwSessionCount,string"`
+	RwSessionCount     uint    `json:"rwSessionCount,string"`
+	MaxPinLen          uint    `json:"maxPinLen,string"`
+	MinPinLen          uint    `json:"minPinLen,string"`
+	TotalPublicMemory  uint    `json:"totalPublicMemory,string"`
+	FreePublicMemory   uint    `json:"freePublicMemory,string"`
+	TotalPrivateMemory uint    `json:"totalPrivateMemory,string"`
+	FreePrivateMemory  uint    `json:"freePrivateMemory,string"`
+	HardwareVersion    Version `json:"hardwareVersion"`
+	FirmwareVersion    Version `json:"firmwareVersion"`
+	UTCTime            string  `json:"utcTime"`
+	SlotID 		   string  `json:"slotID"`
 }
 
 // SessionInfo provides information about a session.
